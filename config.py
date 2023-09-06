@@ -19,6 +19,8 @@ class Config:
 
         conn = ssh_client.invoke_shell()
         
+        print('Lagi diconfig.....')
+        
         for index, item in enumerate(conf):
             conn.send(item + '\n')
             time.sleep(1)
